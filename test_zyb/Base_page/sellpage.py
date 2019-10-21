@@ -1,0 +1,2 @@
+class Sellpage(object):
+    pass

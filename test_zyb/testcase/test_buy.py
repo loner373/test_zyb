@@ -1,4 +1,4 @@
-from test_zyb.Base_page.mainpage import Mainpage
+from test_zyb.page.mainpage import Mainpage
 
 import pytest
 

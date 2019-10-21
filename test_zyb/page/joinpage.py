@@ -1,4 +1,4 @@
-from test_zyb.Base_page.jypage import JYpage
+from test_zyb.page.jypage import JYpage
 
 
 class Joinpage(object):

@@ -1,5 +1,5 @@
-from test_zyb.Base_page.buypage import Buypage
-from test_zyb.Base_page.sellpage import Sellpage
+from test_zyb.page.buypage import Buypage
+from test_zyb.page.sellpage import Sellpage
 
 
 class JYpage(object):

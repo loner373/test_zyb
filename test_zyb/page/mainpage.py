@@ -1,4 +1,4 @@
-from test_zyb.Base_page.mypage import Mypage
+from test_zyb.page.mypage import Mypage
 
 
 class Mainpage(object):

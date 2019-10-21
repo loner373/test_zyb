@@ -1,4 +1,4 @@
-from test_zyb.Base_page.joinpage import Joinpage
+from test_zyb.page.joinpage import Joinpage
 
 
 class Mypage(object):

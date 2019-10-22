@@ -5,4 +5,4 @@ import pytest
 class TestBuy(object):
     def test_buyag(self):
         main = Mainpage()
-        main.gotoMypage().Joinpage().Joinpage()
+        main.gotoMypage().Joinpages().Join()

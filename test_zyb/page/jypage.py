@@ -1,4 +1,4 @@
-
+from test_zyb.page.buypage import Buypage
 
 
 class JYpage(object):

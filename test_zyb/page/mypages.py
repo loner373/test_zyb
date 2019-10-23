@@ -1,3 +1,5 @@
+from selenium.webdriver.common.by import By
+
 from test_zyb.driver.AndroidClient import AndroidClient
 from test_zyb.page.BasePage import BasePage
 from test_zyb.page.jypage import JYpage
@@ -5,9 +7,8 @@ from test_zyb.page.jypage import JYpage
 class Mypage(BasePage):
 
     def Joinpages(self):
-
-        self.driver.find_element_by_id("立即登录")
-        self.driver.find_element_by_id("立即登录").click()
+        denglu = (By.ID, "立即登录")
+        self.find(denglu).click()
         from test_zyb.page.joinpage import Joinpage
         return Joinpage()
     def Getnumber(self):
@@ -15,6 +16,6 @@ class Mypage(BasePage):
         return self
     def Jypage(self):
 
-        self.driver.find_element_by_xpath("//*[@text='交易'and @instance='2']")
-        self.driver.find_element_by_xpath("//*[@text='交易'and @instance='2']").click()
+        jy = (By.XPATH, "//*[@text='交易'and @instance='2']")
+        self.find(jy).click()
         return JYpage()

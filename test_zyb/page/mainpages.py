@@ -1,12 +1,13 @@
 from test_zyb.driver.AndroidClient import AndroidClient
+from test_zyb.page.BasePage import BasePage
 from test_zyb.page.mypages import Mypage
 
 
-class Mainpage(object):
-    def __init__(self):
-        AndroidClient.installApp()
+class Mainpage(BasePage):
+
+
     def gotoMypage(self):
 
-        AndroidClient.driver.find_element_by_xpath("//*[@text='我的'and @instance='5']")
-        AndroidClient.driver.find_element_by_xpath("//*[@text='我的'and @instance='5']").click()
+        self.driver.find_element_by_xpath("//*[@text='我的'and @instance='5']")
+        self.driver.find_element_by_xpath("//*[@text='我的'and @instance='5']").click()
         return Mypage()

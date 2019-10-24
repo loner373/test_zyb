@@ -15,7 +15,7 @@ class BasePage():
     def findByText(self, text ) -> WebElement:
         return self.find((By.XPATH, "//*[@text='%s']" %text ))
 
-    def Click(self, xpath, figure):
-        self.findByText(xpath)
-        self.findByText(xpath).click()
-        self.findByText(xpath).send_keys(figure)
+    # def Click(self, xpath, figure):
+    #     self.findByText(xpath)
+    #     self.findByText(xpath).click()
+    #     self.findByText(xpath).send_keys(figure)

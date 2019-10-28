@@ -5,7 +5,7 @@ from test_zyb.page.BasePage import BasePage
 from test_zyb.page.mypages import Mypage
 
 class Joinpage(BasePage):
-    def Join(self):
+    def Khdmjoin(self):
         #todo:登录完成
         account = (By.ID, "edit_account")
         self.find(account)
@@ -22,3 +22,8 @@ class Joinpage(BasePage):
         self.find(login)
         self.find(login).click()
         return Mypage()
+    def Zjdmjoin(self):
+        #todo:
+        return self
+
+

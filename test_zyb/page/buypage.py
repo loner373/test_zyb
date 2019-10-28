@@ -18,10 +18,10 @@ class Buypage(BasePage):
         self.find(num).click()
         self.find(gp).send_keys(numbe)
         Qued1 = (By.XPATH, " ")
-        self.find(Qued1)
+        #self.find(Qued1)
         self.find(Qued1).click()
         Qued2 = (By.XPATH, " ")
-        self.find(Qued2)
+        #self.find(Qued2)
         self.find(Qued2).click()
         return self
 

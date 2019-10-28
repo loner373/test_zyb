@@ -12,6 +12,8 @@ class Mypage(BasePage):
         self.find(denglu).click()
         from test_zyb.page.joinpage import Joinpage
         return Joinpage()
+    def Joinpaged(self):
+        return
     def Getnumber(self):
 
         #todo:

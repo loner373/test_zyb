@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from test_zyb.driver.AndroidClient import AndroidClient
 
 
-class BasePage():
+class BasePage(object):
     def __init__(self):
         self.driver = AndroidClient.driver
 

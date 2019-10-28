@@ -5,22 +5,21 @@ from test_zyb.page.BasePage import BasePage
 from test_zyb.page.mypages import Mypage
 
 class Joinpage(BasePage):
-    def Khdmjoin(self):
+    _account = (By.ID, "edit_account")
+    _passwped = (By.ID, "edit_password")
+    _dl = (By.ID, "edit_yanzhengma")
+    _yzm = (By.ID, "edit_yanzhengma")
+    _login = (By.ID, "login")
+
+    def Khdmjoin(self, accounts, passwords):
         #todo:登录完成
-        account = (By.ID, "edit_account")
-        self.find(account)
-        self.find(account).send_keys("130002253")
-        passwped = (By.ID, "edit_password")
-        self.find(passwped).click()
-        self.find(passwped).send_keys("123321")
-        dl = (By.ID, "edit_yanzhengma")
-        self.find(dl)
-        self.find(dl).click()
-        yzm = (By.ID, "edit_yanzhengma")
-        self.find(yzm).send_keys("8888")
-        login = (By.ID, "login")
-        self.find(login)
-        self.find(login).click()
+        self.find(self._account)
+        self.find(self._account).send_keys(accounts)
+        self.find(self._passwped).click()
+        self.find(self._passwped).send_keys(passwords)
+        self.find(self._dl).click()
+        self.find(self._yzm).send_keys("8888")
+        self.find(self._login).click()
         return Mypage()
     def Zjdmjoin(self):
         #todo:

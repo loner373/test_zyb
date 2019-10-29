@@ -19,6 +19,7 @@ class Joinpage(BasePage):
         self.find(self._passwped).send_keys(passwords)
         self.find(self._dl).click()
         self.find(self._yzm).send_keys("8888")
+        self.driver.implicitly_wait(10)
         self.find(self._login).click()
         return Mypage()
     def Zjdmjoin(self):
